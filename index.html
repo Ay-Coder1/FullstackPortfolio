@@ -543,7 +543,7 @@ Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor nos
 
 <div class="col-lg-8 mt-5 mt-lg-0">
 
-<form onSubmit="sendEmail(); reset(); return false;">
+<form onsubmit="sendEmail(); reset(); return false;">
 <div class="row">
 <div class="col-md-6 form-group">
 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -608,12 +608,30 @@ Developed by <a href="#">Babarinde Ayomide</a>
 <script src="MyResume/assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="MyResume/assets/vendor/typed.js/typed.umd.js"></script>
 <script src="MyResume/assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="MyResume/assets/vendor/php-email-form/validate.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <!-- Template Main JS File -->
 <script src="MyResume/assets/js/main.js"></script>
 <script src="MyResume/assets/js/index.js"></script>
+
+<script>
+  function sendEmail(){
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "ayomidebabarinde07@gmail.com",
+    Password : "oluwasegun33",
+    To : 'ayomidebabarinde07@gmail.com',
+    From : "document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+}
+
+</script>
+  
 
 </body>
 
