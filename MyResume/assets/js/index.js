@@ -1,10 +1,10 @@
 Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "username",
-    Password : "password",
-    To : 'them@website.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
+    Username : "ayomidebabarinde07@gmail.com",
+    Password : "oluwasegun33",
+    To : 'ayomidebabarinde07@gmail.com',
+    From : "document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
     Body : "And this is the body"
 }).then(
   message => alert(message)
