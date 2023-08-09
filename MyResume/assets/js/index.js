@@ -1,4 +1,5 @@
-Email.send({
+function sendEmail(){
+    Email.send({
     Host : "smtp.elasticemail.com",
     Username : "ayomidebabarinde07@gmail.com",
     Password : "oluwasegun33",
@@ -9,3 +10,5 @@ Email.send({
 }).then(
   message => alert(message)
 );
+
+}
